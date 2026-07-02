@@ -11,21 +11,20 @@ FedEx manages large-scale logistics operations involving multiple warehouses, de
 🎯 Objective
 
 
-Analyze on-time delivery performance across routes and agents
-Identify routes and warehouses causing delays or underutilization
-Provide insights to improve overall logistics efficiency
-
+• Analyze on-time delivery performance across routes and delivery agents.
+• Identify bottlenecks causing shipment delays and warehouse underutilization.
+• Generate actionable insights to improve logistics efficiency and operational performance.
 
 🛠️ Tools Used
 
 
-MySQL / MySQL Workbench
-SQL (Joins, Aggregations, Subqueries, Grouping)
+• MySQL Workbench
+• SQL (Joins, CTEs, Window Functions, Subqueries, Aggregations, CASE Statements)
 
 
 📂 Dataset Overview
 
-A relational dataset built across 5 tables, covering:
+The project uses a normalized relational database consisting of five interconnected tables:
 
 
 1,000 shipments
@@ -37,29 +36,33 @@ A relational dataset built across 5 tables, covering:
 🔧 Process
 
 
-Designed and queried a normalized 5-table schema (shipments, routes, warehouses, agents, and related transactional data)
-Wrote SQL queries to calculate on-time delivery rate across routes and agents
-Analyzed route-wise delay patterns to identify bottleneck routes
-Evaluated warehouse utilization to flag over- and under-utilized warehouses
-Used joins and aggregations across tables to connect shipment outcomes to specific routes, warehouses, and agents
+• Cleaned and validated logistics data by checking duplicates, null values, and referential integrity.
+• Queried a normalized 5-table relational database using Joins, CTEs, Window Functions, and Subqueries.
+• Analyzed delivery delays, route efficiency, warehouse utilization, delivery agent performance, and operational KPIs.
+• Generated actionable business insights to improve logistics efficiency and on-time delivery performance.
 
 
 📊 Key Insights
 
 
-Certain routes consistently showed higher delay rates than others, pointing to specific bottlenecks in the network
-On-time delivery rate varied significantly by agent and route combination
-A subset of warehouses were operating well above or below optimal utilization, indicating scope for load rebalancing
+• Express deliveries experienced higher average delays than Standard deliveries.
+• Traffic emerged as the leading cause of shipment delays.
+• Multiple warehouses operated below optimal utilization.
+• Several international routes showed consistently poor delivery efficiency.
 
 
 ✅ Recommendations
 
 
-Reallocate shipment load from over-utilized to under-utilized warehouses
-Prioritize route-level interventions (rescheduling, agent reassignment) for the highest-delay routes
-Set up recurring on-time delivery tracking by route and agent to catch performance drops early
-
+• Reallocate shipment load from overutilized to underutilized warehouses.
+• Optimize high-delay routes through rescheduling and dynamic route planning.
+• Monitor route and agent performance using recurring KPI dashboards.
 
 🧠 Skills Demonstrated
 
-SQL Querying · Relational Database Design · Joins & Aggregations · Logistics/Operations Analysis · Business Insight Generation
+SQL • MySQL • Joins • CTEs • Window Functions • Subqueries • Data Cleaning • KPI Reporting • Logistics Analytics • Business Intelligence
+
+
+📈 Business Impact
+
+The analysis identified operational bottlenecks affecting delivery performance and warehouse utilization, providing data-driven recommendations to improve logistics efficiency, optimize resource allocation, and enhance customer satisfaction.
